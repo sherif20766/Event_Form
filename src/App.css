@@ -1,0 +1,94 @@
+body, * {
+	font-family: "Roboto";
+}
+.container {
+	max-width: 600px;
+	height: 100%;
+}
+.form-title {	
+  	height: 20px;	
+  	width: 138px;	
+  	color: #1A2434;	
+  	font-family: Roboto;	
+  	font-size: 24px;	
+  	font-weight: bold;	
+  	line-height: 20px;
+}
+
+.discount-info {
+	height: 130px;
+	width: 280px;
+	color: #1A2434;
+	font-family: "Roboto Light";
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.price-table {
+	height: 200px; /* change */
+	width: 280px;
+}
+
+.price-per-attendee {
+	height: 20px;
+	width: 133px;
+	color: #000000;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.number {
+	height: 20px;
+	color: #000000;
+	font-family: "Roboto Light";
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.price {
+	height: 23px;
+	color: #000000;
+	font-family: "Roboto Light";
+	font-size: 16px;
+	line-height: 20px;
+	text-align: right;
+}
+
+.line {	
+	height: 1px;	
+	width: 280px;	
+	background-color: #D1D1D1;
+}
+
+.form {	
+	height: 985px;	
+	width: 280px;
+}
+
+label {
+	height: 23.35px;
+	width: 280px;
+	color: #1A2434;
+	font-family: "Roboto Condensed";
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 0.71px;
+	line-height: 20px;
+}
+
+input {	
+	height: 23.72px;	
+	width: 280px;	
+	color: #1A2434;	
+	font-family: "Roboto Light";	
+	font-size: 18px;	
+	line-height: 20px;
+}
+
+.checkbox {	
+	height: 11px;
+	width: 14px;
+	background-color: #FF0037;
+}
