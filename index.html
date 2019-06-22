@@ -8,8 +8,9 @@
 <body>
 
 <div class="container">
-  
-  <h1 class="form-title">Attend Event</h1>
+ <div id="inner">  
+
+  <h1 class="form-title">Attend event</h1>
 
   <p class="discount-info"><span style="color: #FF0037">Early bird offer</span></br> Discounts are available for groups. The bigger the group, the bigger the discount. Prices are as follows:</p>
 
@@ -18,14 +19,14 @@
   	<h2 class="price-per-attendee">Price per attendee</h2>
     
 	<div class="row">
-	  <div class="col-sm-3 number">1-3</div>
+	  <div class="col-sm-3 number">1 - 3</div>
 	  <div class="col-sm-9 price">£50</div>
 	</div>
 
 	<hr class="line">
 	
 	<div class="row">
-	  <div class="col-sm-3 number">4-6</div>
+	  <div class="col-sm-3 number">4 - 6</div>
 	  <div class="col-sm-9 price">£40</div>
 	</div>
 	
@@ -45,37 +46,37 @@
 
   <div class="form-group">
     <label for="text">FIRST NAME</label>
-    <input type="text" class="form-control">
+    <input type="text" class="form-control" placeholder="Sherif">
     <hr class="line">
   </div>
 
   <div class="form-group">
     <label for="text">FAMILY NAME</label>
-    <input type="text" class="form-control">
+    <input type="text" class="form-control" placeholder="Shawky">
   	<hr class="line">
   </div>
 
   <div class="form-group">
     <label for="date">CHOOSE A DAY</label>
-    <input type="date" class="form-control">
+    <input type="date" min="2019-08-05" max="2019-09-13" class="form-control" placeholder="">
   	<hr class="line">
   </div>
 
   <div class="form-group">
     <label for="number">NUMBER OF ATTENDEES</label>
-    <input type="number" class="form-control">
+    <input type="number" min="0" max="9" class="form-control">
   	<hr class="line">
   </div>
 
   <div class="form-group">
     <label for="text">COMPANY NAME</label>
-    <input type="text" class="form-control">
+    <input type="text" class="form-control" placeholder="Stadion">
   	<hr class="line">
   </div>
 
   <div class="form-group">
     <label for="email">EMAIL</label>
-    <input type="email" class="form-control">
+    <input type="email" class="form-control" placeholder="attendee@url.co.uk">
   	<hr class="line">
   </div>
 
@@ -85,8 +86,29 @@
   	<hr class="line">
   </div>
 
+   <div class="form-check row">
+   	<input class="form-check-input col-sm-2 checkbox" type="checkbox" value="">
+	<label class="form-check-label col-sm-8 do-you-need-wheelcha" for="defaultCheck">Do you need wheelchair access?</label>
+   </div> 
+
+  </br>
+  </br>
+	<hr class="line">
+
+   <div class="row">
+	 <div class="col-sm-3 attendees">Attendees</div>
+	 <div class="col-sm-9 attendees-number">0</div>
+   </div>
+
+
+   <div id="final-answer">£0.00</div>
+
+   <button type="submit" class="btn">Buy</button>
+
 </form>
 
+
+ </div>
 </div>
   <script src="./src/index.js"></script>
 </body>

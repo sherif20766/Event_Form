@@ -3,7 +3,11 @@ body, * {
 }
 .container {
 	max-width: 600px;
-	height: 100%;
+	margin: 0 auto;
+}
+#inner{
+	width: 50%;
+	margin: 0 auto;
 }
 .form-title {	
   	height: 20px;	
@@ -13,6 +17,7 @@ body, * {
   	font-size: 24px;	
   	font-weight: bold;	
   	line-height: 20px;
+  	margin-top: 96px;
 }
 
 .discount-info {
@@ -22,6 +27,7 @@ body, * {
 	font-family: "Roboto Light";
 	font-size: 16px;
 	line-height: 20px;
+	margin-top: 48px;
 }
 
 .price-table {
@@ -87,8 +93,69 @@ input {
 	line-height: 20px;
 }
 
-.checkbox {	
-	height: 11px;
-	width: 14px;
+.form-control {
+    border: 0;
+}
+
+.wpv-filter-form .form-control {
+    border-radius: 0;
+    box-shadow: none;
+   -webkit-box-shadow: none;
+}
+
+.do-you-need-wheelcha {	
+	height: 23px;	
+	width: 90%;	
+	color: #000000;	
+	font-family: "Roboto Light";	
+	font-size: 16px;	
+	line-height: 20px;
+	padding-top: 7px;
+}
+.checkbox{
+	width: 10%;
+
+}
+
+.attendees {
+	height: 23px;
+	color: #000000;
+	font-family: "Roboto Light";
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.attendees-number {
+	height: 23px;
+	color: #000000;
+	font-family: "Roboto Light";
+	font-size: 16px;
+	line-height: 20px;
+	text-align: right;
+}
+
+#final-answer{
+	height: 20px;
+	color: #1A2434;
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 20px;
+	text-align: right;
+	margin-top: 29px;
+}
+
+.btn{
+	height: 40px;
+	width: 280px;
+	color: #FFFFFF;
+	font-family: "Roboto Condensed";
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 25px;
+	text-align: center;
+	margin: 39px 0 100px 0;
 	background-color: #FF0037;
+
 }
