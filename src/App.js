@@ -19,26 +19,26 @@ const FormElements = {
 const calculatePrice = () => {
 
 	const numberOfAttendees = FormElements.numberOfAttendees;
-	const finalPrice 		= FormElements.finalPrice
+	const finalPrice 		= FormElements.finalPrice;
 
 	// if number of attendees between 1 and 3 (inclusive), ticket price: £50
-	if(numberOfAttendees.value >= 1 && numberOfAttendees.value <= 3) {
-		finalPrice.innerHTML = "£"+ numberOfAttendees.value * 50;
+	if(numberOfAttendees.value >= 0 && numberOfAttendees.value <= 3) {
+		finalPrice.innerHTML = "£"+ (numberOfAttendees.value * 50).toFixed(2);
 		updateAttendeesCount();
 	}
 	// if number of attendees between 4 and 6 (inclusive), ticket price: £40
-	if(numberOfAttendees.value >= 4 && numberOfAttendees.value <= 6) {
-		finalPrice.innerHTML = "£"+ numberOfAttendees.value * 40;
+	else if(numberOfAttendees.value >= 4 && numberOfAttendees.value <= 6) {
+		finalPrice.innerHTML = "£"+ (numberOfAttendees.value * 40).toFixed(2);
 		updateAttendeesCount();
 	}
 	// if number of attendees between 7 and 9 (inclusive), ticket price: £35
-	if(numberOfAttendees.value >= 7 && numberOfAttendees.value <=9) {
-		finalPrice.innerHTML = "£"+ numberOfAttendees.value * 35;
+	else if(numberOfAttendees.value >= 7 && numberOfAttendees.value <=9) {
+		finalPrice.innerHTML = "£"+ (numberOfAttendees.value * 35).toFixed(2);
 		updateAttendeesCount();
 	}
 	// if number of attendees more than 9, display message
 	else {
-		finalPrice.innerHTML = "Max attendees: 9";
+		finalPrice.innerHTML = "Choose between 1 & 9";
 		updateAttendeesCount();
 	}
 
@@ -51,7 +51,7 @@ const calculatePrice = () => {
  */
 const updateAttendeesCount = () => {
 
-	const attendeesCount = FormElements.attendeesCount
+	const attendeesCount = FormElements.attendeesCount;
 
 	attendeesCount.innerHTML = FormElements.numberOfAttendees.value;
 };
@@ -74,7 +74,7 @@ const validateDate = () => {
 
 	//error message displayed if date chosen is found in the unavailableDays array.
 	if(unavailableDays.indexOf(date.value) !== -1) {
-		dateFull.innerHTML = "Sorry, but the date you have selected is unavailable. Please select another."
+		dateFull.innerHTML = "Sorry, but the date you have selected is unavailable. Please select another.";
 	};
 
 };
