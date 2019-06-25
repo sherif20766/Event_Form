@@ -2,7 +2,9 @@
 <head>
 	<title>Event Form</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="http://allfont.net/allfont.css?fonts=roboto-light" rel="stylesheet" type="text/css" />
+
 	<link rel="stylesheet" type="text/css" href="./src/App.css">
 </head>
 <body>
@@ -12,7 +14,7 @@
 
   <h1 class="form-title">Attend event</h1>
 
-  <p class="discount-info"><span style="color: #FF0037">Early bird offer</span></br> Discounts are available for groups. The bigger the group, the bigger the discount. Prices are as follows:</p>
+  <p class="discount-info"><span style="color: #FF0037; font-weight: bold;">Early bird offer</span></br> Discounts are available for groups. The bigger the group, the bigger the discount. Prices are as follows:</p>
 
   <div class="price-table">
   	
@@ -42,60 +44,60 @@
   </div>
   </br>
 
-<form class="form" action="http://www.mocky.io/v2/5d00cfff3200007d00f9d809" method="post">
+<form class="form" action="http://www.mocky.io/v2/5d00cfff3200007d00f9d809" target="_blank" method="post">
 
   <div class="form-group">
     <label for="text">FIRST NAME</label>
-    <input type="text" class="form-control" placeholder="Sherif" required="true">
+    <input type="text" class="form-control hover" placeholder="e.g. Sherif" required="true">
     <hr class="line">
   </div>
 
   <div class="form-group">
     <label for="text">FAMILY NAME</label>
-    <input type="text" class="form-control" placeholder="Shawky" required="true">
+    <input type="text" class="form-control hover" required="true">
   	<hr class="line">
   </div>
 
   <div class="form-group">
     <label for="date">CHOOSE A DAY</label>
-    <input type="date" min="2019-08-05" max="2019-09-13" class="form-control" placeholder="" id="date-pick" required="true">
+    <input type="date" min="2019-08-05" max="2019-09-13" class="form-control hover" id="date-pick" required="true">
     <label id="date-full"></label>
   	<hr class="line">
   </div>
 
   <div class="form-group">
     <label for="number">NUMBER OF ATTENDEES</label>
-    <input type="number" min="0" max="9" maxlength="2" class="form-control" id="number-of-attendees" required="true">
+    <input type="number" min="0" max="9" maxlength="2" class="form-control hover" id="number-of-attendees" required="true">
   	<hr class="line">
   </div>
 
   <div class="form-group">
     <div class="row">
      <label for="text" class="col-sm-9">COMPANY NAME</label>
-     <label for="text" class="col-sm-3 optional">optional</label>
+     <label for="text" class="col-sm-3 optional">OPTIONAL</label>
     </div>
-    <input type="text" class="form-control" placeholder="Stadion">
+    <input type="text" class="form-control hover" placeholder="e.g. Stadion">
   	<hr class="line">
   </div>
 
   <div class="form-group">
     <label for="email">EMAIL</label>
-    <input type="email" class="form-control" placeholder="attendee@url.co.uk" required="true">
+    <input type="email" class="form-control hover" required="true">
   	<hr class="line">
   </div>
 
   <div class="form-group">
     <div class="row">
      <label for="text" class="col-sm-9">TELEPHONE</label>
-     <label for="text" class="col-sm-3 optional">optional</label>
+     <label for="text" class="col-sm-3 optional">OPTIONAL </label>
     </div>
     
-    <input type="text" class="form-control">
+    <input type="text" class="form-control hover">
   	<hr class="line">
   </div>
 
    <div class="form-check row">
-   	<input class="form-check-input col-sm-2 checkbox" type="checkbox" value="">
+   	<input class="form-check-input col-sm-2 checkbox" type="checkbox">
 	<label class="form-check-label col-sm-8 do-you-need-wheelcha" for="defaultCheck">Do you need wheelchair access?</label>
    </div>
 

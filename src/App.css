@@ -1,19 +1,24 @@
 body, * {
 	font-family: "Roboto";
 }
+
 .container {
 	max-width: 600px;
 	margin: 0 auto;
 }
+
 #inner{
 	width: 50%;
 	margin: 0 auto;
 }
+
+/* --------------------------------------------------------- */
+
 .form-title {	
   	height: 20px;	
   	width: 138px;	
   	color: #1A2434;	
-  	font-family: Roboto;	
+  	font-family: "Roboto";	
   	font-size: 24px;	
   	font-weight: bold;	
   	line-height: 20px;
@@ -21,17 +26,16 @@ body, * {
 }
 
 .discount-info {
-	height: 130px;
 	width: 280px;
 	color: #1A2434;
-	font-family: "Roboto Light";
+	font-family: "Roboto Light", "Roboto";
 	font-size: 16px;
 	line-height: 20px;
 	margin-top: 48px;
 }
 
 .price-table {
-	height: 200px; /* change */
+	height: 200px;
 	width: 280px;
 }
 
@@ -39,27 +43,27 @@ body, * {
 	height: 20px;
 	width: 133px;
 	color: #000000;
-	font-family: Roboto;
+	font-family: "Roboto";
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 20px;
 }
 
-.number {
-	height: 20px;
+.number, .price {
 	color: #000000;
-	font-family: "Roboto Light";
+	font-family: "Roboto Light", "Roboto";
 	font-size: 16px;
 	line-height: 20px;
 }
 
+.number {
+	height: 20px;
+}
+
 .price {
 	height: 23px;
-	color: #000000;
-	font-family: "Roboto Light";
-	font-size: 16px;
-	line-height: 20px;
 	text-align: right;
+	margin: 0;
 }
 
 .line {	
@@ -68,33 +72,49 @@ body, * {
 	background-color: #D1D1D1;
 }
 
+/* --------------------------------------------------------- */
+
 .form {	
 	height: 985px;	
 	width: 280px;
 }
 
-label {
-	height: 23.35px;
+label, input {
 	width: 280px;
 	color: #1A2434;
+	line-height: 20px;
+}
+
+label {
+	height: 23.35px;
 	font-family: "Roboto Condensed";
 	font-size: 16px;
 	font-weight: bold;
 	letter-spacing: 0.71px;
-	line-height: 20px;
 }
 
 input {	
 	height: 23.72px;	
-	width: 280px;	
-	color: #1A2434;	
-	font-family: "Roboto Light";	
+	font-family: "Roboto Light", "Roboto";	
 	font-size: 18px;	
-	line-height: 20px;
+}
+
+.hover:hover {
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 .form-control {
     border: 0;
+}
+
+.optional {
+	height: 23px;
+	width: 74px;
+	color: #757575;
+	font-family: "Roboto Condensed";
+	font-size: 12px;
+	line-height: 20px;
+	right: 10px;
 }
 
 #date-full {
@@ -112,37 +132,36 @@ input {
 	height: 23px;	
 	width: 90%;	
 	color: #000000;	
-	font-family: "Roboto Light";	
+	font-family: "Roboto Light", "Roboto";	
 	font-size: 16px;	
 	line-height: 20px;
 	padding-top: 7px;
+	padding-left: 12px;
 }
+
 .checkbox{
 	width: 10%;
-
+	left: 10px;
 }
 
-#attendees {
+/* --------------------------------------------------------- */
+
+#attendees, #attendees-count {
 	height: 23px;
 	color: #000000;
-	font-family: "Roboto Light";
+	font-family: "Roboto Light", "Roboto";
 	font-size: 16px;
 	line-height: 20px;
 }
 
 #attendees-count {
-	height: 23px;
-	color: #000000;
-	font-family: "Roboto Light";
-	font-size: 16px;
-	line-height: 20px;
 	text-align: right;
 }
 
 #final-price{
 	height: 20px;
 	color: #1A2434;
-	font-family: Roboto;
+	font-family: "Roboto";	
 	font-size: 24px;
 	font-weight: bold;
 	line-height: 20px;
@@ -162,5 +181,10 @@ input {
 	text-align: center;
 	margin: 39px 0 100px 0;
 	background-color: #FF0037;
+}
+
+.btn:hover {
+	background-color: #CC002C;
+	color: #FFFFFF;
 
 }
