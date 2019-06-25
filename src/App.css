@@ -97,6 +97,11 @@ input {
     border: 0;
 }
 
+#date-full {
+	color: #FF0037 ;
+	padding-top: 5px;
+}
+
 .wpv-filter-form .form-control {
     border-radius: 0;
     box-shadow: none;
@@ -117,7 +122,7 @@ input {
 
 }
 
-.attendees {
+#attendees {
 	height: 23px;
 	color: #000000;
 	font-family: "Roboto Light";
@@ -125,7 +130,7 @@ input {
 	line-height: 20px;
 }
 
-.attendees-number {
+#attendees-count {
 	height: 23px;
 	color: #000000;
 	font-family: "Roboto Light";
@@ -134,7 +139,7 @@ input {
 	text-align: right;
 }
 
-#final-answer{
+#final-price{
 	height: 20px;
 	color: #1A2434;
 	font-family: Roboto;

@@ -42,46 +42,54 @@
   </div>
   </br>
 
-<form class="form" action="">
+<form class="form" action="http://www.mocky.io/v2/5d00cfff3200007d00f9d809" method="post">
 
   <div class="form-group">
     <label for="text">FIRST NAME</label>
-    <input type="text" class="form-control" placeholder="Sherif">
+    <input type="text" class="form-control" placeholder="Sherif" required="true">
     <hr class="line">
   </div>
 
   <div class="form-group">
     <label for="text">FAMILY NAME</label>
-    <input type="text" class="form-control" placeholder="Shawky">
+    <input type="text" class="form-control" placeholder="Shawky" required="true">
   	<hr class="line">
   </div>
 
   <div class="form-group">
     <label for="date">CHOOSE A DAY</label>
-    <input type="date" min="2019-08-05" max="2019-09-13" class="form-control" placeholder="">
+    <input type="date" min="2019-08-05" max="2019-09-13" class="form-control" placeholder="" id="date-pick" required="true">
+    <label id="date-full"></label>
   	<hr class="line">
   </div>
 
   <div class="form-group">
     <label for="number">NUMBER OF ATTENDEES</label>
-    <input type="number" min="0" max="9" class="form-control">
+    <input type="number" min="0" max="9" maxlength="2" class="form-control" id="number-of-attendees" required="true">
   	<hr class="line">
   </div>
 
   <div class="form-group">
-    <label for="text">COMPANY NAME</label>
+    <div class="row">
+     <label for="text" class="col-sm-9">COMPANY NAME</label>
+     <label for="text" class="col-sm-3 optional">optional</label>
+    </div>
     <input type="text" class="form-control" placeholder="Stadion">
   	<hr class="line">
   </div>
 
   <div class="form-group">
     <label for="email">EMAIL</label>
-    <input type="email" class="form-control" placeholder="attendee@url.co.uk">
+    <input type="email" class="form-control" placeholder="attendee@url.co.uk" required="true">
   	<hr class="line">
   </div>
 
   <div class="form-group">
-    <label for="text">TELEPHONE</label>
+    <div class="row">
+     <label for="text" class="col-sm-9">TELEPHONE</label>
+     <label for="text" class="col-sm-3 optional">optional</label>
+    </div>
+    
     <input type="text" class="form-control">
   	<hr class="line">
   </div>
@@ -89,19 +97,19 @@
    <div class="form-check row">
    	<input class="form-check-input col-sm-2 checkbox" type="checkbox" value="">
 	<label class="form-check-label col-sm-8 do-you-need-wheelcha" for="defaultCheck">Do you need wheelchair access?</label>
-   </div> 
+   </div>
 
   </br>
   </br>
 	<hr class="line">
 
    <div class="row">
-	 <div class="col-sm-3 attendees">Attendees</div>
-	 <div class="col-sm-9 attendees-number">0</div>
+	 <div class="col-sm-3" id="attendees">Attendees</div>
+	 <div class="col-sm-9" id="attendees-count">0</div>
    </div>
 
 
-   <div id="final-answer">£0.00</div>
+   <div id="final-price">£0.00</div>
 
    <button type="submit" class="btn">Buy</button>
 
